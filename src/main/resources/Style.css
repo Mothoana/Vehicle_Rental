@@ -1,0 +1,240 @@
+/* Root and Base Styling */
+.root {
+    -fx-base: #f4f6f8;
+    -fx-background: #f4f6f8;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Tab Pane */
+.tab-pane {
+    -fx-background-color: #ffffff;
+    -fx-padding: 0;
+}
+
+.tab {
+    -fx-background-color: #eaeaea;
+    -fx-background-radius: 5 5 0 0;
+    -fx-padding: 5 15 5 15;
+}
+
+.tab:selected {
+    -fx-background-color: #1976d2;
+    -fx-text-fill: white;
+}
+
+.tab-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #1976d2;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8 15 8 15;
+    -fx-background-radius: 6;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+
+.button:hover {
+    -fx-background-color: #1565c0;
+}
+
+.button:pressed {
+    -fx-background-color: #0d47a1;
+}
+
+/* Table View */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+}
+
+.table-view .column-header {
+    -fx-background-color: #1976d2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.table-view .table-cell {
+    -fx-padding: 8 10 8 10;
+    -fx-font-size: 14px;
+    -fx-text-fill: #212121;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f9f9f9;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #e3f2fd;
+}
+
+/* Inputs */
+.text-field, .combo-box, .date-picker {
+    -fx-background-color: white;
+    -fx-border-color: #c0c0c0;
+    -fx-border-radius: 4;
+    -fx-padding: 5;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused, .combo-box:focused, .date-picker:focused {
+    -fx-border-color: #1976d2;
+}
+
+/* Labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #212121;
+}
+
+.label.title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1976d2;
+}
+
+/* Stat Cards */
+.stat-card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 10, 0, 0, 4);
+    -fx-padding: 20;
+    -fx-min-width: 200;
+    -fx-min-height: 100;
+    -fx-alignment: center;
+}
+
+.stat-card-title {
+    -fx-font-size: 16px;
+    -fx-text-fill: #757575;
+}
+
+.stat-card-value {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1976d2;
+}
+
+/* Dialogs */
+.dialog-pane {
+    -fx-background-color: white;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #1976d2;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* Charts */
+.chart {
+    -fx-background-color: white;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-padding: 15;
+}
+
+.chart-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1976d2;
+}
+
+.axis-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #666666;
+}
+
+/* Context Menu */
+.context-menu {
+    -fx-background-color: white;
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1;
+}
+
+.menu-item {
+    -fx-padding: 5 10 5 10;
+    -fx-font-size: 14px;
+}
+
+.menu-item:hover {
+    -fx-background-color: #e3f2fd;
+}
+
+/* Top Bar */
+.top-bar {
+    -fx-background-color: #1976d2;
+    -fx-padding: 10;
+}
+
+.top-bar .label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.top-bar .button {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 1;
+    -fx-border-radius: 4;
+}
+
+.top-bar .button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Welcome Screen */
+.welcome-pane {
+    -fx-background-color: linear-gradient(to bottom right, #1976d2, #64b5f6);
+}
+
+.welcome-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 2);
+}
+
+.welcome-button {
+    -fx-background-color: white;
+    -fx-text-fill: #1976d2;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 25 12 25;
+    -fx-background-radius: 30;
+}
+
+.welcome-button:hover {
+    -fx-background-color: #e3f2fd;
+}
+
+/* Login/Register */
+.login-grid {
+    -fx-background-color: white;
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 5);
+}
+
+.login-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1976d2;
+}
+
+.message-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
