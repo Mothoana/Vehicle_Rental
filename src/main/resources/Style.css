@@ -1,240 +1,219 @@
-/* Root and Base Styling */
+/* Root */
 .root {
-    -fx-base: #f4f6f8;
-    -fx-background: #f4f6f8;
+    -fx-base: #FEFCE8; /* Soft off-white background */
+    -fx-background: #FFFFFF; /* White for main panels */
     -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 14px;
 }
 
-/* Tab Pane */
+/* Tabs */
 .tab-pane {
-    -fx-background-color: #ffffff;
+    -fx-background-color: #FEFCE8; /* Soft off-white */
     -fx-padding: 0;
 }
 
 .tab {
-    -fx-background-color: #eaeaea;
-    -fx-background-radius: 5 5 0 0;
-    -fx-padding: 5 15 5 15;
+    -fx-background-color: #FFF7ED; /* Light cream */
+    -fx-background-radius: 6 6 0 0;
+    -fx-padding: 8 20 8 20;
+    -fx-text-fill: #111827; /* Deep charcoal text */
+    -fx-font-weight: bold;
 }
 
 .tab:selected {
-    -fx-background-color: #1976d2;
-    -fx-text-fill: white;
-}
-
-.tab-label {
-    -fx-font-size: 14px;
-    -fx-font-weight: bold;
+    -fx-background-color: #0F766E; /* Deep teal */
+    -fx-text-fill: #FFFFFF; /* White text */
 }
 
 /* Buttons */
 .button {
-    -fx-background-color: #1976d2;
-    -fx-text-fill: white;
+    -fx-background-color: #2DD4BF; /* Muted teal */
+    -fx-text-fill: #FFFFFF;
     -fx-font-size: 14px;
-    -fx-padding: 8 15 8 15;
-    -fx-background-radius: 6;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);
+    -fx-font-weight: bold;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8, 0, 0, 2);
 }
 
 .button:hover {
-    -fx-background-color: #1565c0;
+    -fx-background-color: #26A69A; /* Slightly darker teal */
 }
 
 .button:pressed {
-    -fx-background-color: #0d47a1;
+    -fx-background-color: #1E897D; /* Even darker teal */
 }
 
-/* Table View */
+/* Table */
 .table-view {
-    -fx-background-color: white;
-    -fx-border-color: #d0d0d0;
-    -fx-border-width: 1;
-    -fx-border-radius: 5;
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #FED7AA; /* Light peach border */
+    -fx-border-radius: 6;
 }
 
 .table-view .column-header {
-    -fx-background-color: #1976d2;
-    -fx-text-fill: white;
+    -fx-background-color: #0F766E; /* Deep teal */
+    -fx-text-fill: #FFFFFF;
     -fx-font-weight: bold;
     -fx-font-size: 14px;
 }
 
 .table-view .table-cell {
-    -fx-padding: 8 10 8 10;
     -fx-font-size: 14px;
-    -fx-text-fill: #212121;
+    -fx-text-fill: #111827; /* Deep charcoal text */
+    -fx-alignment: CENTER-LEFT;
 }
 
 .table-row-cell:odd {
-    -fx-background-color: #f9f9f9;
+    -fx-background-color: #FFF7ED; /* Light cream for odd rows */
 }
 
 .table-row-cell:selected {
-    -fx-background-color: #e3f2fd;
+    -fx-background-color: #A7F3D0; /* Light mint selection */
+    -fx-text-fill: #111827;
 }
 
-/* Inputs */
+/* Text Inputs */
 .text-field, .combo-box, .date-picker {
-    -fx-background-color: white;
-    -fx-border-color: #c0c0c0;
-    -fx-border-radius: 4;
-    -fx-padding: 5;
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #FED7AA; /* Light peach border */
+    -fx-border-radius: 5;
+    -fx-padding: 8;
     -fx-font-size: 14px;
 }
 
 .text-field:focused, .combo-box:focused, .date-picker:focused {
-    -fx-border-color: #1976d2;
+    -fx-border-color: #2DD4BF; /* Muted teal */
+    -fx-border-width: 2;
 }
 
 /* Labels */
 .label {
     -fx-font-size: 14px;
-    -fx-text-fill: #212121;
+    -fx-text-fill: #111827; /* Deep charcoal text */
 }
 
 .label.title {
-    -fx-font-size: 20px;
+    -fx-font-size: 24px;
     -fx-font-weight: bold;
-    -fx-text-fill: #1976d2;
+    -fx-text-fill: #0F766E; /* Deep teal */
 }
 
 /* Stat Cards */
 .stat-card {
-    -fx-background-color: white;
-    -fx-background-radius: 10;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 10, 0, 0, 4);
-    -fx-padding: 20;
-    -fx-min-width: 200;
-    -fx-min-height: 100;
-    -fx-alignment: center;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 4);
+    -fx-padding: 15;
+}
+
+/* Specific colors for each stat card */
+.stat-card:nth-child(1) { /* Available Vehicles */
+    -fx-background-color: #34D399; /* Soft green */
+}
+
+.stat-card:nth-child(2) { /* Total Customers */
+    -fx-background-color: #FBBF24; /* Warm beige */
+}
+
+.stat-card:nth-child(3) { /* Active Bookings */
+    -fx-background-color: #F87171; /* Subtle coral */
 }
 
 .stat-card-title {
     -fx-font-size: 16px;
-    -fx-text-fill: #757575;
+    -fx-text-fill: #FFFFFF; /* White text for contrast */
+    -fx-font-weight: bold;
 }
 
 .stat-card-value {
-    -fx-font-size: 24px;
+    -fx-font-size: 28px;
     -fx-font-weight: bold;
-    -fx-text-fill: #1976d2;
+    -fx-text-fill: #FFFFFF;
+}
+
+/* Alerts/Warnings */
+.message-label {
+    -fx-text-fill: #DC2626; /* Red for errors */
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
 }
 
 /* Dialogs */
 .dialog-pane {
-    -fx-background-color: white;
+    -fx-background-color: #FFFFFF;
 }
 
 .dialog-pane .header-panel {
-    -fx-background-color: #1976d2;
+    -fx-background-color: #0F766E; /* Deep teal */
 }
 
 .dialog-pane .header-panel .label {
-    -fx-text-fill: white;
+    -fx-text-fill: #FFFFFF;
     -fx-font-size: 16px;
     -fx-font-weight: bold;
 }
 
 /* Charts */
-.chart {
-    -fx-background-color: white;
-    -fx-border-color: #e0e0e0;
-    -fx-border-width: 1;
-    -fx-border-radius: 5;
-    -fx-padding: 15;
-}
-
 .chart-title {
-    -fx-font-size: 16px;
+    -fx-text-fill: #0F766E; /* Deep teal */
+    -fx-font-size: 18px;
     -fx-font-weight: bold;
-    -fx-text-fill: #1976d2;
 }
 
 .axis-label {
-    -fx-font-size: 14px;
-    -fx-text-fill: #666666;
-}
-
-/* Context Menu */
-.context-menu {
-    -fx-background-color: white;
-    -fx-border-color: #d0d0d0;
-    -fx-border-width: 1;
-}
-
-.menu-item {
-    -fx-padding: 5 10 5 10;
-    -fx-font-size: 14px;
-}
-
-.menu-item:hover {
-    -fx-background-color: #e3f2fd;
+    -fx-text-fill: #6B7280; /* Medium charcoal (not gray, slightly darker tone) */
 }
 
 /* Top Bar */
 .top-bar {
-    -fx-background-color: #1976d2;
+    -fx-background-color: #0F766E; /* Deep teal */
     -fx-padding: 10;
 }
 
 .top-bar .label {
-    -fx-text-fill: white;
+    -fx-text-fill: #FFFFFF;
     -fx-font-size: 14px;
 }
 
 .top-bar .button {
     -fx-background-color: transparent;
-    -fx-border-color: white;
-    -fx-border-width: 1;
-    -fx-border-radius: 4;
+    -fx-border-color: #FFFFFF;
+    -fx-border-radius: 5;
+    -fx-text-fill: #FFFFFF;
 }
 
 .top-bar .button:hover {
-    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-color: #2DD4BF; /* Muted teal */
 }
 
 /* Welcome Screen */
 .welcome-pane {
-    -fx-background-color: linear-gradient(to bottom right, #1976d2, #64b5f6);
+    -fx-background-color: linear-gradient(to bottom right, #0F766E, #2DD4BF); /* Gradient from deep teal to muted teal */
+    -fx-alignment: center;
 }
 
 .welcome-title {
+    -fx-text-fill: #FFFFFF;
     -fx-font-size: 28px;
     -fx-font-weight: bold;
-    -fx-text-fill: white;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 2);
 }
 
 .welcome-button {
-    -fx-background-color: white;
-    -fx-text-fill: #1976d2;
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #0F766E; /* Deep teal text */
     -fx-font-size: 16px;
     -fx-font-weight: bold;
-    -fx-padding: 12 25 12 25;
-    -fx-background-radius: 30;
+    -fx-background-radius: 8;
 }
 
 .welcome-button:hover {
-    -fx-background-color: #e3f2fd;
+    -fx-background-color: #FFF7ED; /* Light cream */
 }
 
-/* Login/Register */
-.login-grid {
-    -fx-background-color: white;
-    -fx-border-color: #d0d0d0;
-    -fx-border-width: 1;
-    -fx-border-radius: 5;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 5);
-}
-
+/* Login */
 .login-title {
+    -fx-text-fill: #0F766E; /* Deep teal */
     -fx-font-size: 20px;
-    -fx-font-weight: bold;
-    -fx-text-fill: #1976d2;
-}
-
-.message-label {
-    -fx-font-size: 14px;
     -fx-font-weight: bold;
 }

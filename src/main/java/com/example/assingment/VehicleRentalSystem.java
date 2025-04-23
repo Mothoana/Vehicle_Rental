@@ -169,8 +169,8 @@ public class VehicleRentalSystem extends Application {
         welcomePane.setAlignment(Pos.CENTER);
         welcomePane.setPadding(new Insets(50));
 
-        Label titleLabel = new Label("Welcome to Vehicle Rental System");
-        titleLabel.setFont(Font.font(24));
+        Label titleLabel = new Label("Welcome To Anah's Vehicle Rental System");
+        titleLabel.setFont(Font.font(44));
         titleLabel.setTextFill(Color.DARKBLUE);
 
         Button loginButton = new Button("Login");
